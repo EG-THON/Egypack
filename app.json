@@ -1,0 +1,105 @@
+{
+  "name": "Egython - Userbot",
+  "description": "Source User bot Joined ( @Egython ).",
+  "logo": "https://telegra.ph/file/b4a17055dafc1adfd226c.jpg",
+  "keywords": [
+    "plugin",
+    "modular",
+    "productivity"
+  ],
+  "repository": "https://github.com/EG-THON/Egypack/",
+  "website": "#TODO",
+  "success_url": "#TODO",
+  "env": {
+    "ALIVE_NAME": {
+      "description": "اسم الاك بتاعك",
+      "value": ""
+    },
+    "APP_ID": {
+      "description": "اب ايدي",
+      "value": ""
+    },
+    "API_HASH": {
+      "description": "ايبي هاش",
+      "value": ""
+    },
+    "STRING_SESSION": {
+      "description": "كود التيرمكس",
+      "value": ""
+    },
+    "ENV": {
+      "description": "سيبها زي مهي",
+      "value": "ANYTHING"
+    },
+    "TG_BOT_USERNAME": {
+      "description": "معرف البوت",
+      "value": ""
+    },
+    "TG_BOT_TOKEN": {
+      "description": " توكن البوت - يجب وضع البوت انلاين من اعدادات بوت فاذر",
+      "value": ""
+    },
+    "PMPERMIT_PIC": {
+      "description": "رابط صوره الحمايه ",
+      "value": "https://telegra.ph/file/cc481a0210a45b61c3e63.jpg",
+      "required": false
+    },
+    "PRIVATE_GROUP_ID": {
+      "description": "الجروب - سيبها عادي",
+      "value": "",
+      "required": false
+    },
+    "CUSTOM_PMPERMIT_TEXT": {
+      "description": " الكليشه الحمايه - ملهاش لازمه عادي",
+      "value": "",
+      "required": false
+    },
+    "OWNER_ID": {
+      "description": "ايدي الاك بتاعك",
+      "value": "",
+      "required": false
+    },
+
+    "HEROKU_API_KEY": {
+      "description": "ابي هيركو الخاص بحسابك",
+      "value": "",
+      "required": false
+    },
+    "HEROKU_APP_NAME": {
+      "description": "اسم التطبيق ( حط اسم التطبيق اللي حطيته فوق خالص)",
+      "value": "",
+      "required": false
+    },
+    "TZ": {
+      "description": "منطقتك - سيبها ",
+      "value": "Africa/Cairo",
+      "required": false    
+    },
+    "UPSTREAM_REPO": {
+      "description": "الرمز - سيبها ",
+      "value": "Egython ",
+      "required": false
+    }
+  },
+  "addons": [{
+    "plan": "heroku-postgresql",
+    "options": {
+      "version": "12"
+    }
+  }],
+  "buildpacks": [{
+    "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
+  },{
+    "url":"https://github.com/heroku/heroku-buildpack-google-chrome"
+  },{
+    "url":"https://github.com/heroku/heroku-buildpack-chromedriver"
+  },{
+    "url": "https://github.com/opendoor-labs/heroku-buildpack-p7zip"
+  },{
+    "url": "https://github.com/heroku/heroku-buildpack-apt.git"
+  },{
+    "url": "https://github.com/chrismytton/heroku-buildpack-jq"
+  },{
+    "url": "heroku/python"
+  }]
+}
