@@ -77,7 +77,7 @@
     },
     "UPSTREAM_REPO": {
       "description": "الرمز - سيبها ",
-      "value": "Egython ",
+      "value": "https://github.com/EG-THON/Egython",
       "required": false
     }
   },
